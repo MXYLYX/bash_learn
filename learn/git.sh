@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-git pull &
-echo '$! = ' $!;
-echo '$? = ' $?;
+if /usr/bin/git pull; then
+    echo "OK"
+else
+    echo "Not Ok"
+fi
