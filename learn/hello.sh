@@ -6,5 +6,9 @@ echo "Hello World!"
 
 echo "
     Hello
-    Worldd
+    World
 "
+# -n 表示取消末尾的回车符 相当于不换行
+
+echo -n "Hello World no new line"
+echo "Hello World"
