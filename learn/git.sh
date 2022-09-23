@@ -2,7 +2,7 @@
 
 # cd ~/git_project/git_project
 echo && git pull origin master > ~/build.log
-if $?=0; then
+if test $?=0; then
     echo 'git pull ok'
     # npm run build > ~/build.log
 else 
