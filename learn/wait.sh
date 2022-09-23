@@ -3,6 +3,6 @@
 
 sleep 10 &
 
-echo jobs -l
+jobs -l
 
 wait
