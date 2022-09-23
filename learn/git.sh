@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-git pull &
-wait
-echo "ret = " $?
+# cd ~/git_project/git_project
+git pull origin master > ~/build.log
+if $?=0 then
+    echo 'git pull ok'
+    # npm run build > ~/build.log
+else 
+    echo 'git pull fail'
+fi
